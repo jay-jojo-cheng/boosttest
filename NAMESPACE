@@ -1,0 +1,7 @@
+useDynLib(boosttest, .registration=TRUE)
+import(RcppEigen)
+importFrom(Rcpp, evalCpp)
+importMethodsFrom("methods", coerce)
+
+importFrom("methods",
+           setOldClass, setGeneric, setMethod)
